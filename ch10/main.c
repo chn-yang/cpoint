@@ -13,6 +13,9 @@ int main(int argc, char const *argv[]) {
         .name = "雷婷婷",
         .school = school,
     };
+    Student *st = &student;
+    printf("%s\n", st->name);
+    printf("%s\n", st->school.school_name);
     about_student(student);
     return 0;
 }
