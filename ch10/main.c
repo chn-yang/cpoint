@@ -18,8 +18,7 @@ int main(int argc, char const *argv[]) {
     };
     printf("%s\n", student.name);
     printf("%s\n", student.school.school_name);
-
-    Student *st = &student;
+    
     about_student(&student);
     return 0;
 }
