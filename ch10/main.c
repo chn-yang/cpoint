@@ -3,7 +3,7 @@
 
 // C语言函数传值引用需要复制参数, 把结构作为函数参数时,
 // 使用指针比结构本身的拷贝效率能提高很多
-void about_student(Student *student) {
+void about_student(Student const *student) {
     printf("我叫: %s\n", student->name);
     printf("我读的学校是: %s\n", student->school.school_name);
 }
