@@ -7,6 +7,7 @@ int main() {
     printf("%d\n", is_rev_num(1001));
 }
 
+//判断是否回文数
 int is_rev_num(long n) {
     if (n >= 0 && n < 10) {
         return 1;
@@ -26,6 +27,8 @@ int is_rev_num(long n) {
     }
     return 1;
 }
+
+//将数字使用模10运算 一个个的变成单个字符存进数组里
 void num_explode(long n, int arr[], int len) {
     int i = 0;
     while (n >= 10) {
@@ -36,6 +39,7 @@ void num_explode(long n, int arr[], int len) {
     arr[i] = n % 10;
 }
 
+//返回数字字符个数
 int num_length(long num) {
     int count;
     for (count = 0; num != 0; num /= 10) {
